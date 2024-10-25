@@ -1,0 +1,139 @@
+<HTML>
+<HEAD>
+<script>
+let nombre;
+let apellido;
+let edad;
+let dni;
+
+function nombrepersonal(){
+nombre= prompt("Ingrese su nombre")
+document.getElementsByClassName("dos")[0].innerHTML = nombre
+
+
+}
+function apellidopersonal(){
+apellido= prompt("Ingrese su apellido")
+document.getElementsByClassName("tres")[0].innerHTML = apellido
+
+}
+function edadpersonal(){
+edad= prompt("Ingrese su edad")
+document.getElementsByClassName("cuatro")[0].innerHTML = edad
+if (edad < 18){
+document.getElementsByClassName("cuatro")[0].style.backgroundColor="green"
+}
+if (edad >= 18){
+document.getElementsByClassName("cuatro")[0].style.backgroundColor="blue"
+}
+
+
+}
+function dnipersonal(){
+dni= prompt("Ingrese su dni")
+document.getElementsByClassName("cinco")[0].innerHTML = dni
+
+}
+
+
+</script>
+
+<style>
+#PRINCIPAL{
+  
+  WIDTH:520PX;
+  HEIGHT:300PX;
+  BACKGROUND-COLOR:BLACK;
+  
+}
+.uno{
+  
+  WIDTH:150PX;
+  HEIGHT:150PX;
+  BACKGROUND-COLOR:white ;
+  FLOAT:LEFT;
+  margin-left:40px;
+  margin-top: 40px;
+  
+}
+
+.dos{
+  
+  WIDTH:250PX;
+  HEIGHT:35PX;
+  BACKGROUND-COLOR:white ;
+  FLOAT:LEFT;
+  color:black;
+  font-size:30px;
+  text-align:center;
+  margin-left:40px;
+  margin-top: 40px;
+
+}
+
+.tres{
+  
+  WIDTH:250PX;
+  HEIGHT:35PX;
+  BACKGROUND-COLOR:white ;
+  FLOAT:LEFT;
+  color:black;
+  font-size:30px;
+  text-align:center;
+  margin-left:40px;
+  margin-top: 30px;
+
+}
+
+.cuatro{
+  
+  WIDTH:250PX;
+  HEIGHT:35PX;
+  BACKGROUND-COLOR:white ;
+  FLOAT:LEFT;
+  color:black;
+  font-size:30px;
+  text-align:center;
+  margin-left:40px;
+  margin-top: 30px;
+
+}
+
+.cinco{
+  
+  WIDTH:250PX;
+  HEIGHT:35PX;
+  BACKGROUND-COLOR:white;
+  FLOAT:LEFT;
+  color:black;
+  font-size:30px;
+  text-align:center;
+  margin-left:230px;
+  margin-top: 30px;
+
+}
+
+</style>
+
+
+</HEAD>
+<BODY>
+<DIV ID = "PRINCIPAL">
+<DIV CLASS = "uno" onclick=fotocarnet>
+
+</DIV>
+<DIV CLASS = "dos" onclick=nombrepersonal()>
+NOMBRE
+</DIV>
+<DIV CLASS = "tres" onclick=apellidopersonal()>
+APELLIDO
+</DIV>
+<DIV CLASS = "cuatro" onclick=edadpersonal()>
+EDAD
+</DIV>
+<DIV CLASS = "cinco" onclick=dnipersonal()>
+DNI
+</DIV>
+</DIV>
+</BODY>
+</HTML>
